@@ -3,6 +3,8 @@ services:
         build: .
         environment:
           GIT_EMAIL: ${GIT_EMAIL}
-          GIT_NAME: ${GIT_NAME}
+          GIT_USERNAME: ${GIT_USERNAME}
           GIT_REPO: ${GIT_REPO}
           GIT_PASSWORD: ${GIT_PASSWORD}
+          BASE_DIR: ${BASE_DIR}
+          PBO_TOOL: ${PBO_TOOL}

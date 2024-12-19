@@ -1,12 +1,11 @@
 import os
 import subprocess
-import json
 from flask import Flask, request
 
 app = Flask(__name__)
 
-BASE_DIR = "/path/to/jtf-main-pack/addons"  # Path to the addons folder
-PBO_TOOL = ""             # Path to your PBO packing tool
+BASE_DIR = os.environ.get("BASE_DIR")
+PBO_TOOL = os.environ.get("PBO_TOOL")
 
 @app.route('/webhook', methods=['POST'])
 def handle_webhook():

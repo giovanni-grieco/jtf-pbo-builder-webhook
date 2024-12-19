@@ -6,6 +6,7 @@ WORKDIR /app
 
 # Copy the current directory contents into the container at /app
 COPY ./app /app
+COPY requirements.txt /app
 
 RUN rm -f /usr/lib/python3*/EXTERNALLY-MANAGED
 
