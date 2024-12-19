@@ -2,7 +2,7 @@ services:
     web:
         build: .
         environment:
-          - GIT_EMAIL = "${GIT_EMAIL}"
-          - GIT_NAME = "${GIT_NAME}"
-          - GIT_REPO = "${GIT_REPO}"
-          - GIT_PASSWORD = "${GIT_PASSWORD}"
+          GIT_EMAIL: ${GIT_EMAIL}
+          GIT_NAME: ${GIT_NAME}
+          GIT_REPO: ${GIT_REPO}
+          GIT_PASSWORD: ${GIT_PASSWORD}
